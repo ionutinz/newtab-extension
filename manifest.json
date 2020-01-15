@@ -1,0 +1,25 @@
+{
+    "name": "Magic 5 New Tab",
+    "short_name": "MG5",
+    "author": "ionut inz",
+    "version": "1.0",
+    "icons": { 
+        "16": "16x16.png",
+        "48": "48x48.png",
+       "128": "128x128.png" 
+    },
+    "browser_action": {
+        "default_icon": "48x48.png"
+      },
+    "manifest_version": 2,
+    "chrome_url_overrides" : {  
+        "newtab": "newtab.html"
+    },
+    "permissions": ["activeTab", "tabs"],
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    }
+  }
+
+  
